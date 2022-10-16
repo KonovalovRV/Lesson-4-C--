@@ -12,16 +12,18 @@ int Prompt(string massage)
     return value;
 }
 
-int DegreeNumber()
+int a = Prompt("Введите первое число    ");
+int b = Prompt("Введите второе число    ");
+
+int DegreeNumber(int number, int degreenumber)
 {
     int f = 1;
-    int length = Prompt("Введите первое число    ");
+    int length = degreenumber;
     for (int i = 0; i < length; i++)
     {
-        f = f * Prompt("Введите второе число    ");
+        f = f * number;
     }
 return f;
 }
 
-Console.WriteLine(DegreeNumber());
-
+Console.WriteLine(DegreeNumber(a,b));
